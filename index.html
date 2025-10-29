@@ -1,118 +1,68 @@
-<!-- <!doctype html>
-<html lang="en">
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bootstrap demo</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
-</head>
 
-<body>
-
-  <div class="container"> </div>
-  <div class="row">
-    <div class="col">
-      <h1>Testing Color Scheme</h1>
-
-      <div class="circle"></div>
-    </div>
-    <div class="col">
-      <h2>Primary Color</h2>
-      <h3>Secondary Color</h3>
-      <p>text color <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates at incidunt, asperiores
-        enim sunt consequatur possimus cumque distinctio vero nemo doloremque nobis deleniti optio repellendus. Maxime
-        aliquam est earum laboriosam!</p>
-    </div>
-  </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"></script>
-</body>
-
-</html> -->
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-    <title>JUJU's Bar & Grill — Wireframe</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juju's Bar & Grill</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <header class="site-header">
-  <div class="top-left">Locations</div>
-  <nav class="top-nav">
-          <a href="#">Order Online</a>
-          <a href="#">Careers</a>
-          <a href="#">Events</a>
-          <a href="#">Catering</a>
-          <a href="#">Menu</a>
+
+    
+  <nav class="navbar navbar-expand-lg  py-3">
+      <div class="container">
+
+        <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="img/jujusbglogo.png" alt="logo" height="50" class="me-2">
+        </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav text-uppercase fw-semibold">
+          <li class="nav-item"><a class="nav-link" href="#">Locations + Menus</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Order Online</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Gift Cards</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Jobs</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Shop</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Events + Catering</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Press</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Community</a></li>
+      </ul>
+    </div>
+
+   
+    <div class="d-none d-lg-flex align-items-center">
+      <a href="#" class="ms-3 position-relative">
+        <i class="bi bi-bag fs-4 text-light"> <img src="" alt=""></i>
+        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning">0</span>
+      </a>
+    </div>
   </nav>
-      <div class="logo">LOGO</div>
-</header>
 
-    <main class="container">
-        <h1 class="title">JUJU'S BAR &amp; Grill</h1>
-
-  <div class="hero">
-      <aside class="ad ad-left">AD</aside>
-
-    <div class="hero-main">
-    <div class="hero-media">Video / Large Media</div>
-    <div class="this-week">This Week's Specials</div>
-  </div>
-
-      <aside class="ad ad-right">ADVERTISE</aside>
-  </div>
-
-    <section class="specials">
-          <div class="col-left">
-          <div class="card img">IMG</div>
-          <div class="card desc">Description of Img</div>
-
-      <div class="card img large">IMG</div>
-  </div>
-
-      <div class="col-center">
-      <div class="card desc">Description of Img</div>
-      <div class="card img">IMG</div>
-      <div class="card desc">Description of Img</div>
+ <div class="container">
+  <div class="row mt-6">
+    <div class="col-12">
+<h1>This Weeks Specials!</h1>
     </div>
-
-    <div class="col-right">
-    <div class="card img">IMG</div>
-    <div class="card desc">Description of Img</div>
   </div>
-    </section>
 
-    <div class="vertical-reviews left-vertical">REVIEWS</div>
-    <div class="vertical-reviews right-vertical">REVIEWS</div>
-
-    </main>
-
-    <footer class="site-footer">
-   <div class="footer-links">
-      <a href="#">Privacy Policy</a>
-      <a href="#">Help + FAQs</a>
-      <a href="#">Terms of Use</a>
-      <a href="#">Contact</a>
-      <a href="#">Login / Loyalty Account</a>
-      <a href="#">Locations</a>
+  <div class="row">
+    <div class="col-6">
+      <img src="img/volcanoshrimp.jpg" alt="" height="100px" >
+    </div>
+    <div class="col-6"> <h3>Volcano Shrimp</h3></div>
   </div>
-      <div class="menu-box">MENU</div>
-    </footer>
-    </body>
+ </div> 
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.js"></script>
+  </body>
 </html>

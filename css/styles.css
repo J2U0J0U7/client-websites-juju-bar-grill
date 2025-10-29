@@ -1,4 +1,4 @@
-:root{
+/* :root{
     --primary-color: #bd632f;
     --secondary-color: #d8973c;
     --neutral-color: #d8c99b;
@@ -28,210 +28,55 @@ p{
     background-color: var(--accent-color);
     border-radius: 50%;
 }
- */
-
- :root {
---gap: 16px;
---muted: #e6e6e6;
---border: #ccc;
---bg: #fff;
---text: #222;
+  */
+/* General navbar styling */
+.body{
+   background-color: #f54c14;
+}
+.navbar {
+background-color: #1cad68 ;
+border-bottom: 2px solid #1cad68;
 }
 
-* {
-box-sizing: border-box;
+.navbar-brand img {
+height: 55px;
 }
 
-body {
-font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial;
-margin: 0;
-color: var(--text);
-background: var(--bg);
-padding: 20px;
+/* Navbar links */
+.navbar-nav .nav-link {
+color: #ffffffcc;
+padding: 0.5rem 1rem;
+transition: all 0.3s ease;
 }
 
-/* Header */
-.site-header {
-display: flex;
-align-items: center;
-justify-content: space-between;
-gap: var(--gap);
-border-bottom: 2px dashed var(--border);
-padding-bottom: 10px;
-margin-bottom: 12px;
+.navbar-nav .nav-link:hover {
+color: #f54c14;
+text-shadow: 0 0 5px #f54c14;
+transform: translateY(-1px);
 }
 
-.top-nav a {
-margin: 0 8px;
-font-size: 14px;
-color: var(--text);
-text-decoration: none;
+/* Right-side buttons */
+.nav-btn {
+border: 1px solid #999;
+color: #fff;
+font-weight: 500;
+transition: all 0.3s ease;
 }
 
-.logo {
-font-weight: 700;
-padding: 6px 10px;
-border: 1px solid var(--border);
+.nav-btn:hover {
+background-color: #f54c14;
+border-color: #f54c14;
+color: #000;
 }
 
-/* Main container */
-.container {
-max-width: 900px;
-margin: 0 auto;
-position: relative;
+/* Badge for cart icon */
+.badge {
+font-size: 0.65rem;
 }
 
-/* Title */
-.title {
-text-align: center;
-font-size: 32px;
-margin: 8px 0 12px;
-letter-spacing: 1px;
-}
-
-/* Hero area */
-.hero {
-display: flex;
-gap: 12px;
-align-items: flex-start;
-margin-bottom: 18px;
-}
-
-.ad {
-width: 60px;
-min-height: 220px;
-border: 2px dashed var(--border);
-display: flex;
-align-items: center;
-justify-content: center;
-writing-mode: vertical-rl;
-text-orientation: upright;
-font-weight: 600;
-color: #666;
-}
-
-.hero-main {
-flex: 1;
-display: flex;
-flex-direction: column;
-gap: 10px;
-}
-
-.hero-media {
-background: var(--muted);
-border: 2px dashed var(--border);
-min-height: 220px;
-display: flex;
-align-items: center;
-justify-content: center;
-}
-
-/* This week's specials label */
-.this-week {
-text-align: center;
-padding: 8px 0;
-font-size: 18px;
-border-top: 1px solid var(--border);
-}
-
-/* Specials grid */
-.specials {
-display: grid;
-grid-template-columns: 1fr 1fr 1fr;
-gap: 12px;
-margin-top: 16px;
-position: relative;
-min-height: 320px;
-}
-
-.col-left,
-.col-center,
-.col-right {
-display: flex;
-flex-direction: column;
-gap: 12px;
-}
-
-.card {
-border: 2px dashed var(--border);
-padding: 12px;
-min-height: 60px;
-display: flex;
-align-items: center;
-justify-content: center;
-background: #fafafa;
-}
-
-.card.img {
-min-height: 90px;
-font-weight: 700;
-}
-
-.card.large {
-min-height: 140px;
-}
-
-/* Vertical review bars (positioned over the grid edges) */
-.vertical-reviews {
-position: absolute;
-top: 220px;
-width: 50px;
-height: 240px;
-border: 2px dashed var(--border);
-display: flex;
-align-items: center;
-justify-content: center;
-writing-mode: vertical-rl;
-text-orientation: upright;
-font-weight: 700;
-background: #fff;
-color: #666;
-}
-
-.left-vertical {
-left: -70px;
-}
-
-.right-vertical {
-right: -70px;
-}
-
-/* Footer */
-.site-footer {
-margin-top: 24px;
-border-top: 2px dashed var(--border);
-padding-top: 12px;
-display: flex;
-align-items: center;
-justify-content: space-between;
-gap: 12px;
-}
-
-.footer-links a {
-margin-right: 10px;
-font-size: 13px;
-color: #444;
-text-decoration: none;
-}
-
-.menu-box {
-border: 2px solid var(--border);
-padding: 6px 14px;
-font-weight: 700;
-}
-
-/* Responsive */
-@media (max-width: 800px) {
-.specials {
-grid-template-columns: 1fr;
-}
-.ad {
+/* Responsive tweaks */
+@media (max-width: 992px) {
+.nav-btn {
 display: none;
-}
-.vertical-reviews {
-display: none;
-}
-.container {
-padding: 0 8px;
 }
 }
