@@ -1,11 +1,36 @@
 
-/* Hero Section */
+
 .hero-section {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/placeholder.jpg');
-    background-size: cover;
-    background-position: center;
+    position: relative;
     height: 80vh;
+    overflow: hidden;
     color: white;
+}
+
+.hero-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.35);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
 }
 
 .navbar {
@@ -14,10 +39,10 @@
 }
 
 .navbar-brand img {
-height: 55px;
+height: 75px;
 }
 
-/* Navbar links */
+
 .navbar-nav .nav-link {
 color: #ffffffcc;
 padding: 0.5rem 1rem;
@@ -30,7 +55,7 @@ text-shadow: 0 0 5px #ff835a;
 transform: translateY(-1px);
 }
 
-/* Right-side buttons */
+
 .nav-btn {
 border: 1px solid #999;
 color: #fff;
@@ -44,19 +69,19 @@ border-color: #ff835a;
 color: #000;
 }
 
-/* Badge for cart icon */
+
 .badge {
 font-size: 0.65rem;
 }
 
-/* Responsive tweaks */
+
 @media (max-width: 992px) {
     .nav-btn {
         display: none;
     }
 }
 
-/* Card Styles */
+
 .card {
     transition: transform 0.3s ease;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -71,12 +96,12 @@ font-size: 0.65rem;
     object-fit: cover;
 }
 
-/* About Section */
+
 .bg-light {
     background-color: #f8f9fa;
 }
 
-/* Footer */
+
 footer {
     background-color: #1cad68;
 }
@@ -90,7 +115,7 @@ footer .social-links a:hover {
     color: #ff835a !important;
 }
 
-/* Buttons */
+
 .btn-warning {
     background-color: #ff835a;
     border-color: #ff835a;
@@ -103,7 +128,7 @@ footer .social-links a:hover {
     color: white;
 }
 
-/* Map Container */
+
 .map-container {
     height: 300px;
     overflow: hidden;
